@@ -76,10 +76,10 @@ All provisioned automatically through Infrastructure-as-Code.
 No manual setup. No clicking through the AWS console.
 
 # What I wanted to prove:
-✅ I can architect multi-tier systems from scratch
-✅ I understand Terraform module structure & variables
-✅ I can integrate networking, security groups, and compute resources cohesively
-✅ I can deploy reliably to any region
+       I can architect multi-tier systems from scratch
+       I understand Terraform module structure & variables
+       I can integrate networking, security groups, and compute resources cohesively
+       I can deploy reliably to any region
 
 # What I learned along the way:
 
