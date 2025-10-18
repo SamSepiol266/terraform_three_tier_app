@@ -51,3 +51,17 @@ Before deploying, ensure you have:
        terraform destroy
 
    
+terraform-aws-3tier/
+│
+├── main.tf                 # Root module calling submodules
+├── variables.tf            # Input variables
+├── outputs.tf              # Outputs like ALB DNS and DB endpoint
+├── provider.tf             # AWS provider and region config
+│
+├── modules/
+│   ├── vpc/                # Networking setup
+│   ├── alb/                # Load Balancer configuration
+│   ├── ec2/                # Application servers
+│   └── rds/                # Database instance
+│
+└── README.md               # Project documentation
