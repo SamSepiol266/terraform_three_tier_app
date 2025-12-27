@@ -1,15 +1,28 @@
 three-tier-app/
 ├── main.tf
-├── provider.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
 ├── modules/
-│   ├── vpc/
-│   │   └── main.tf
-│   ├── alb/
-│   │   └── main.tf
-│   ├── ec2/
-│   │   └── main.tf
-│   └── rds/
-│       └── main.tf
+│   ├── app_tier/
+│   │   ├── main.tf
+│   │   └── variables.tf
+│   ├── database_tier/
+│   │   ├── main.tf
+│   │   └── variables.tf
+│   ├── load_balancer/
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
+│   ├── security_groups/
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
+│   └── web_tier/
+│       ├── main.tf
+│       └── variables.tf
+├── outputs.tf
+├── terraform.tfstate
+├── terraform.tfstate.backup
+└── variables.tf
